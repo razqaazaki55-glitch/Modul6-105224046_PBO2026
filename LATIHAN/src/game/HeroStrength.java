@@ -1,22 +1,26 @@
 package game;
 
+//No.3
 public class HeroStrength extends Hero {
+    private String type = "Strength";
 
     public HeroStrength(String nama, double health, double attackPower) {
         super(nama, health, attackPower);
     }
 
+    //No.4
+    // Override display
     @Override
     public void display() {
         super.display();
-        System.out.println("Type: Strength");
+        System.out.println("Type: " + type);
     }
 
+    // Override terimaSerangan
     @Override
     public void terimaSerangan(double damage) {
-        // Hero Strength punya pertahanan lebih (damage hanya masuk 50%)
-        double damageMasuk = damage * 0.5;
-        this.health = this.health - damageMasuk;
-        System.out.println(this.nama + " Strength menerima damage: " + damageMasuk);
+        double damageDiterima = damage * 0.5;
+        health -= damageDiterima;
+        System.out.println(nama + " (Strength) menerima damage hanya " + damageDiterima);
     }
 }

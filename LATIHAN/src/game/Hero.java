@@ -1,28 +1,36 @@
 package game;
 
+//No.1
 public class Hero {
     protected String nama;
     protected double health;
     protected double attackPower;
 
+    // Constructor
     public Hero(String nama, double health, double attackPower) {
         this.nama = nama;
         this.health = health;
         this.attackPower = attackPower;
     }
 
+    //No.2
+    // Method display
     public void display() {
-        System.out.println("Nama: " + this.nama);
-        System.out.println("Health: " + this.health);
-        System.out.println("Attack Power: " + this.attackPower);
+        System.out.println("Nama: " + nama);
+        System.out.println("Health: " + health);
+        System.out.println("Attack Power: " + attackPower);
     }
 
+    // Method berlatih
     public void berlatih() {
-        this.attackPower += 5;
-        System.out.println(this.nama + " selesai berlatih. Attack Power sekarang: " + this.attackPower);
+        attackPower = attackPower + 10;
+        System.out.println(nama + " sedang berlatih! Attack Power bertambah.");
     }
 
+    //No.3
+    // Method menerima serangan
     public void terimaSerangan(double damage) {
-        this.health -= damage;
+        health = health - damage;
+        System.out.println(nama + " menerima damage sebesar " + damage);
     }
 }
