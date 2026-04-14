@@ -2,9 +2,9 @@ package game;
 
 //No.1
 public class Hero {
-    protected String nama;
-    protected double health;
-    protected double attackPower;
+    String nama;
+    double health;
+    double attackPower;
 
     // Constructor
     public Hero(String nama, double health, double attackPower) {

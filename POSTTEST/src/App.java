@@ -10,8 +10,8 @@ public class App {
 
         daftar.add(new Mobil("B 1234 AA", "Toyota", 2010, 200000, 7));
         daftar.add(new Mobil("B 5678 BB", "Honda", 2018, 250000, 5));
-        daftar.add(new Motor("B 9999 CC", "Yamaha", 2020, 100000, 300));
-        daftar.add(new Motor("B 8888DD", "Honda", 2022, 80000, 150));
+        daftar.add(new Motor("B 8787 RR", "Yamaha", 2020, 100000, 300));
+        daftar.add(new Motor("B 8888 ZZ", "Honda", 2022, 80000, 150));
 
         // Looping 
         for (Kendaraan k : daftar) {

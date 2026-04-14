@@ -8,5 +8,4 @@ public class MakananRingan extends Produk {
         super(namaProduk, harga);
         this.rasa = rasa;
     }
-
 }
